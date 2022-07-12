@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+    <head>
+
+        {% include head.html %}
+    
+    </head>
+    
+    <body>
+
+        {% include navbar.html %}
+
+        <div id="trigger-anchor"></div>
+
+        <!-- start wrapper -->
+
+        <div class="wrapper">
+
+            <!-- start container -->
+
+            <div class="main d-grid g-1 gt-layout-main">
+
+                <!-- start col -->
+
+                {% include leftside.html %}
+
+                <!-- end col -->
+
+                {% include cardlayout.html %}
+
+            </div>
+
+            <!-- end container -->
+
+            {% include footer.html %}
+
+        </div>
+
+        <!-- end wrapper -->
+
+    </body>
+
+</html>

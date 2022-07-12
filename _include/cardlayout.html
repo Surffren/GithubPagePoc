@@ -1,0 +1,56 @@
+<!-- start col -->
+
+<div class="r-col">
+
+    <!-- start content header -->
+
+    <div class="content-head d-flex align-items-center">
+
+        <div class="infos-head">
+
+            <h1>Welcome to my Portfolio<br>Enjoy the visit !</h1>
+
+            <p>Read and learn articles about cybersercurity,<br>networking, admin system and more...</p>
+
+        </div>                           
+
+    </div>
+
+    <h5>5 Tutorials <span class="badge-tr">1 New</span></h5>
+
+    <!-- end content header -->
+
+    <!-- start container -->
+
+    <div class="cards-container">
+
+        <!-- start card -->
+
+        {% for post in site.posts %}
+
+            <a href="{{ post.url }}" class="post-card">
+
+                <h2>{{ post.title }}</h2>
+                <br>
+                <p class="card-description">{{ post.excerpt }}</p>
+
+                <div class="d-flex align-items-center mt-auto">
+                    
+                    <i class="bi post-top {{ post.icon }} me-auto"></i>
+                    <i class="bi post-i bi-arrow-right-short"></i>
+
+                </div>
+
+            </a>
+
+        {% endfor %}
+
+        <!-- end card -->
+
+    </div>
+
+    <!-- end container -->
+
+</div>
+
+<!-- end col -->

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+    <head>
+
+        {% include head.html %}
+    
+    </head>
+    
+    <body>
+
+        {% include navbar.html %}
+
+        <div id="trigger-anchor"></div>
+
+        <!-- start wrapper -->
+
+        <div class="wrapper">
+
+            <!-- start container -->
+
+            <div class="main d-grid g-1 gt-layout-main">
+
+                <!-- start col -->
+
+                {% include leftside.html %}
+
+                <!-- end col -->
+
+                <!-- start col -->
+
+                <div class="r-col d-grid g-1 gt-layout-r-col">
+
+                    {% include post_head.html %}
+
+                    {% include post_spy.html %}
+
+                    <!-- start col-content -->
+
+                    <div>
+
+                        {% include post_ske.html %}
+
+                    </div>
+
+                    <!-- end col-content -->
+                
+                    <div class="d-flex justify-content-center">
+
+                        <div id="snack" class="snack"><i class="bi bi-check"></i>Copied</div>
+
+                    </div>
+
+                </div>
+
+                <!-- end col -->
+
+            </div>
+
+            <!-- end container -->
+
+            {% include footer.html %}
+
+        </div>
+
+        <!-- end wrapper -->
+
+    </body>
+
+</html>
